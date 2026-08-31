@@ -1,0 +1,32 @@
+{
+    "name": "binalinq/data-synchronize",
+    "version": "1.0.38",
+    "description": "Make site ready in few steps",
+    "type": "binalinq-package",
+    "autoload": {
+        "psr-4": {
+            "BinaLinq\\DataSynchronize\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BinaLinq\\DataSynchronize\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0 || ^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "require": {
+        "binalinq/platform": "*@dev",
+        "maatwebsite/excel": "^3.1",
+        "spatie/simple-excel": "^3.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BinaLinq\\DataSynchronize\\Providers\\DataSynchronizeServiceProvider"
+            ]
+        }
+    }
+}
